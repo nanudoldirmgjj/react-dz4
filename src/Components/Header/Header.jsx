@@ -6,6 +6,8 @@ import logo from '../../assets/logo.png'
 import searchImg from '../../assets/search1.png'
 import cartImg from '../../assets/shopping-cart1.png'
 
+import Button from '../Button/Button'
+
 const Header =() => {
     return(
         <div className="Header_container">
@@ -50,6 +52,7 @@ const Header =() => {
           </div>
         </div>
       </div>
+          <Button/>
 
       <div className="head-menu">
 

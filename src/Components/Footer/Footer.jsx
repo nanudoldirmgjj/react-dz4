@@ -1,10 +1,11 @@
 import './Footer.scss'
+import Button from '../Button/Button'
 
 const Footer =() => {
     return(
         <div className="Footer_container">
 <footer>
-
+<Button/>
 <div className="foot-container">
 
   <div className="plantku">
