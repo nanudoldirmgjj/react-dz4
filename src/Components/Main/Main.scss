@@ -1,0 +1,299 @@
+@import "../../style/vars.scss";
+
+.benefits {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.benefit {
+    width: 20%;
+    border: 1px solid #E0E0E0;
+    min-width: 180px;
+    margin: 10px 20px;
+    flex-grow: 1;
+}
+
+.benefit-container {
+    padding: 20px;
+}
+
+.ben-name {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px 0;
+
+}
+
+.ben-name img {
+    margin-right: 16px;
+}
+
+.ben-name p {
+    font-family: $main-font-family;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $green;
+
+}
+
+.description {
+    font-family: $main-font-family;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2C1500;
+
+}
+
+
+
+.featuredPlants {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.filter {
+    display: flex;
+    height: 47px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:   1px  solid #E0E0E0;
+margin: 0 0 20px 0; 
+
+}
+
+
+.featuredTitle{
+font-family: $main-font-family;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;   
+}
+.filterForm{
+    height: 100%;
+}
+#filterChoice {
+    border: 1px solid #E0E0E0;
+    height: 80%;
+    text-align: center;
+    padding: 10px;
+
+}
+#filterChoice option {
+font-family: $main-font-family;
+font-size: 12px;
+font-weight: 500;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+
+.cactusList {
+    width: 100%;
+    display: flex;
+    margin:  auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.cactus {
+    padding: 20px;
+}
+.cactusName {
+    height: 70px;
+     padding: 10px;
+}
+.cactusContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cacName {
+    font-family: $main-font-family;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+.cacPrice {
+    font-family: $main-font-family;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+
+
+.relax {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    height: 610px;
+    flex-wrap: wrap;
+
+}
+
+.relax-left, .relax-left {
+height: 100%;
+width: 40%;
+min-width: 560px;
+}
+
+.relax-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.boldTopic{
+    font-family: $main-font-family  ;
+font-size: 40px;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: 0em;
+text-align: left;
+color: #2C1500;
+}
+
+.thickDescription {
+    font-family: $main-font-family;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 16px;
+
+}
+
+
+.favoritePlant {
+    width: 90%;
+    margin: auto;
+    height: 360px;
+    background: #F3F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.favText {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.favText p{
+    font-family: $main-font-family;
+font-size: 40px;
+font-weight: 700;
+line-height: 56px;
+color: #2C1500;
+
+}
+
+.favText button{
+    width:  (152px);
+height:  (40px);
+padding: 10px, 20px, 10px, 20px;
+// border: 1px;
+background: #156963;
+color: white;
+
+font-family: 'Nunito', sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
+
+}
+
+
+
+
+@media(max-width: 1192px) {
+    .relax-left {
+        margin: auto;
+        width: 100%;
+        min-width: 300px ;
+        padding: 0;
+        }
+    .relax{
+        height: auto;
+
+    }
+    .relax-right {
+        display: none;
+    }
+}
+
+@media(max-width:1076px) {
+    .favText{
+        height: 70%;
+    }
+}
+
+
+@media(max-width:957px) {
+    .favoritePlant {
+        text-align: center;
+        img{
+            display: none;
+        }
+        button {
+            margin: auto;
+        }
+    }
+}
+
+@media(max-width:599px){
+.benefits{
+margin: 30px auto;
+}
+.favoritePlant{
+    height: auto;
+    padding: 30px 0;
+}
+
+.favText p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 20px 0;
+}
+
+}

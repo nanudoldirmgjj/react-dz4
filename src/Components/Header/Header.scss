@@ -1,0 +1,254 @@
+@import "../../style/vars.scss";
+
+.head-block {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: 650px;
+    flex-wrap: wrap;
+    align-items: start;
+
+}
+
+.plant-div {
+    height: 100%;
+}
+
+.main-plant {
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-items: center;
+    flex-grow: 1;
+    align-self: end;
+    justify-content: space-between;
+    padding: 0 0 0 50px;
+    width: 40%;
+    min-width: 489px;
+}
+
+
+
+.topic {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    color: $green;
+    font-family: $main-font-family;
+    font-size: 68px;
+    margin: 0 0 24px 0;
+
+    font-weight: 500;
+    line-height: 83px;
+
+    text-align: left;
+
+}
+
+.name-content {
+    font-family: $main-font-family;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+
+    text-align: left;
+
+}
+
+.slider {
+    display: flex;
+    margin: 30px 0 0 0;
+}
+
+.next {
+    background-color: $green;
+}
+
+
+.next-container,
+.prev-container {
+    padding: 20px 50px 20px 30px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+
+
+
+.prev-button,
+.next-button {
+    display: flex;
+    align-items: center;
+}
+
+
+.prev-button,
+.next-button p {
+
+    font-family: $main-font-family;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.prev-button img {
+    margin: 0 10px 0 0;
+    opacity: 0.5;
+}
+
+.Pbut-name {
+    font-family: $main-font-family;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $green;
+}
+
+.next-button img {
+    margin: 0 0px 0 10px;
+    opacity: 0.5;
+}
+
+.next-button {
+    color: #83ADAA;
+}
+
+.Nbut-name {
+    color: white;
+    font-family: $main-font-family;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.head-menu {
+    width: 90%;
+    margin: auto;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.left-menu {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    min-width: 300px;
+
+}
+
+
+.signUp-but {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $green;
+    width: 111px;
+    height: 100%;
+
+    transition: all ease 0.3s;
+    &:hover{
+        scale: 1.1;
+    }
+}
+
+.signIn-but {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: $green;
+    color: $light;
+    width: 111px;
+    height: 100%;
+
+}
+
+@media (max-width: 1022px) {
+    .head-block {
+        height: auto;
+    }
+
+    .head-menu{
+        background: #ffffff76;
+        height: 46px;
+    }
+
+    .plant-div {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-plant {
+        height: auto;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        flex-grow: 0;
+        align-self: auto;
+        width: 90%;
+        min-width: auto;
+        margin: auto;
+        padding: 0;
+    }
+}
+
+
+@media(max-width:599px){
+    .left-menu{
+        min-width: 200px;
+    }
+
+    .signIn-but, .signUp-but{
+        width: 70px;
+    }
+.name{
+    font-size: 42px;
+    margin: 10px 0;
+    line-height: normal;
+}
+}
